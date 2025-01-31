@@ -12,7 +12,8 @@ library(bkmrhat)
 
 # load manipulated data----------------------------------------------------------
 
-load("/home/r044073/Chemx_IQ/data/DATA_afimp_manipulated_2024-11-06.RData")
+load("PATH TO IMPUTED DATA SETS")
+# df_afimp below is data after imputation
 
 # set date
 systime <- Sys.Date()
@@ -123,3 +124,7 @@ time2 <- Sys.time()
 
 # running time for one outcome
 time2-time1
+
+#################################################################################################
+# Save image
+save(BKMRfits, file = paste0("YOUR PATH/FILE NAME_", systime, ".RData"))

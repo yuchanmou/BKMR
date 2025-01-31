@@ -10,9 +10,10 @@ library(tidyverse)
 library(bkmr)
 library(bkmrhat) # parallel running extension of BKMR
 
-# load manipulated data----------------------------------------------------------
+# load manipulated imputed data----------------------------------------------------------
 
-load("/home/r044073/Chemx_IQ/data/DATA_afimp_manipulated_2024-11-06.RData")
+load("PATH TO IMPUTED DATA SETS")
+# df_afimp below is data after imputation
 
 # set date
 systime <- Sys.Date()
@@ -117,4 +118,4 @@ time2-time1
 
 #################################################################################################
 # Save image
-save(BKMRfits, file = paste0("/home/r044073/Chemx_IQ/results/BKMR_MI_EDC_CD_", systime, ".RData"))
+save(BKMRfits, file = paste0("YOUR PATH/FILE NAME_", systime, ".RData"))
